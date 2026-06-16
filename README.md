@@ -23,44 +23,15 @@ An EXILED plugin for **SCP: Secret Laboratory** that secretly converts one lucky
 
 ## 📦 Installation
 
-1. **Download / Build** the plugin DLL (see [Building](#building) below).
+1. **Download ** the plugin DLL,
 2. Drop `UndercoverCIAgent.dll` into your server's **EXILED Plugins** folder:
-   - **Linux**: `~/.config/EXILED/Plugins/`
-   - **Windows**: `%AppData%\EXILED\Plugins\`
+   - **Path**: `\EXILED\Plugins\`
 3. **Restart** your server or run `exiled reload` in the console.
 4. The config file is auto-generated at `EXILED/Configs/<port>-config.yml`.
 
 ---
 
-## 🛠️ Building
 
-### Prerequisites
-
-| Tool | Version |
-|---|---|
-| .NET SDK | 4.8 or later |
-| EXILED | 8.x |
-| Visual Studio / Rider | Any recent version |
-
-### Steps
-
-```bash
-# 1. Clone / open the project
-cd UndercoverCIAgent
-
-# 2. Restore NuGet packages (downloads the EXILED package automatically)
-dotnet restore
-
-# 3. Build in Release mode
-dotnet build -c Release
-
-# 4. The DLL is output to:
-#    bin/Release/net48/UndercoverCIAgent.dll
-```
-
-> **Note:** If the EXILED NuGet package is not available on your network, reference the local DLLs from your server's `EXILED/` directory instead. Edit the `.csproj` to replace the `<PackageReference>` with `<Reference>` pointing to the local files.
-
----
 
 ## ⚙️ Configuration
 
@@ -166,3 +137,5 @@ Pull requests and issue reports are welcome! If you add new features (e.g., cust
 ## 📜 License
 
 Released under the **MIT License**. See `LICENSE` for details.
+
+created by POMPON[JMZ]
